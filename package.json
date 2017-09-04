@@ -1,11 +1,14 @@
 {
   "name": "errorshots",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "errorshots gathers your error logs and sends to the cloud",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
     "test": "mocha lib"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "bin": {
     "errorshots": "./index.js"
@@ -29,6 +32,7 @@
   },
   "dependencies": {
     "log-update": "^2.1.0",
+    "nvm": "0.0.4",
     "s3": "^4.4.0"
   }
 }
