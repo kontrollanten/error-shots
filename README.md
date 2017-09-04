@@ -28,5 +28,5 @@ $ errorshots push s3
 
 ```yaml
 on_failure:
-    - errorshots push
+    - errorshots push s3
 ```

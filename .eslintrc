@@ -32,7 +32,8 @@
       "error",
       "always"
     ],
-    "object-curly-spacing": 0
+    "object-curly-spacing": 0,
+    "no-console": 0
   },
   "plugins": [
     "jasmine"
