@@ -5,5 +5,5 @@ const listFiles = (process.argv.indexOf('list') > -1);
 const { getShots } = require('./lib/list');
 
 if (listFiles) {
-    console.log(getShots());
+    console.log(getShots().join('\n'));
 }
