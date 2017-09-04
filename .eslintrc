@@ -1,0 +1,40 @@
+{
+  "env": {
+    "browser": false,
+    "es6": true,
+    "node": true,
+    "jasmine": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:jasmine/recommended"
+  ],
+  "rules": {
+    "indent": [
+      "error",
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "object-curly-spacing": 0
+  },
+  "plugins": [
+    "jasmine"
+  ]
+}

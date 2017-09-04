@@ -1,0 +1,29 @@
+{
+  "name": "errorshots",
+  "version": "1.0.0",
+  "description": "errorshots gathers your error logs and sends to the cloud",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha lib"
+  },
+  "bin": {
+    "errorshots": "./index.js"
+  },
+  "keywords": [
+    "error",
+    "errorshots",
+    "ci",
+    "error",
+    "handling"
+  ],
+  "author": "kontrollanten <alexander@width.se>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.6.1",
+    "eslint-plugin-jasmine": "^2.8.4",
+    "mocha": "^3.5.0",
+    "proxyquire": "^1.8.0"
+  }
+}
