@@ -1,7 +1,7 @@
 {
   "name": "error-shots",
   "version": "0.1.0",
-  "description": "errorshots gathers your error logs and sends to the cloud",
+  "description": "Error Shots gathers your error logs and sends to the cloud",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
@@ -17,8 +17,9 @@
     "error",
     "errorshots",
     "ci",
-    "error",
-    "handling"
+    "error handling",
+    "node",
+    "travis"
   ],
   "author": "kontrollanten <alexander@width.se>",
   "license": "ISC",

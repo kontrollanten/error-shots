@@ -15,19 +15,16 @@ jobs:
     - stage: lint
       script: npm run lint
       install: skip
-    - stage: test
+    - stage: unit
       script: npm run test
-      node_js:
-        - "8"
-        - "7"
-        - "6"
+    - stage: deploy
+      script: skip
       deploy:
             provider: npm
             email: $NPM_PUBLISH_EMAIL
             api_key: $NPM_PUBLISH_API_KEY
             on:
               tags: true
-              branch: master
               node: "8"
               repo: "kontrollanten/error-shots"
 
