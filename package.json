@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "mocha lib"
+    "test": "nyc mocha lib",
+    "test:ci": "nyc mocha lib && nyc report --reporter=text-lcov | coveralls"
   },
   "publishConfig": {
     "access": "public"
@@ -26,9 +27,11 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "chai-spies-next": "^0.9.3",
+    "coveralls": "^2.13.1",
     "eslint": "^4.6.1",
     "eslint-plugin-jasmine": "^2.8.4",
     "mocha": "^3.5.0",
+    "nyc": "^11.2.1",
     "proxyquire": "^1.8.0"
   },
   "dependencies": {
