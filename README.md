@@ -18,9 +18,7 @@ ERROR_SHOTS_S3_SECRET_ACCESS_KEY
 ERROR_SHOTS_S3_BUCKET
 ```
 ### Error shots
-By default Error Shots will look for error files in `$(npm config get cache)/_logs`.
-
-If you want to add additional patterns to look for, then add a `.errorshots` in the root of your project containing all the patterns.
+If you've provided a .errorshots file in your project root, the errorshots will be fetched from there. By default Error Shots will look for error files in `$(npm config get cache)/_logs`.
 
 ```.errorshots
 errorshot*.png
