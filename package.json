@@ -32,7 +32,9 @@
     "eslint-plugin-mocha": "^4.11.0",
     "mocha": "^3.5.0",
     "nyc": "^11.2.1",
-    "proxyquire": "^1.8.0"
+    "proxyquire": "^1.8.0",
+    "sinon": "^4.1.5",
+    "sinon-chai": "^2.14.0"
   },
   "dependencies": {
     "log-update": "^2.1.0",
