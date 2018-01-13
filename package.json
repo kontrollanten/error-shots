@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint .",
     "test": "nyc mocha lib",
-    "test:ci": "nyc mocha lib && nyc report --reporter=text-lcov | coveralls"
+    "test:ci": "nyc mocha lib && nyc report --reporter=text-lcov | coveralls",
+    "test:watch": "mocha -w lib"
   },
   "publishConfig": {
     "access": "public"
