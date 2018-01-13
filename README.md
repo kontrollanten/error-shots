@@ -45,6 +45,23 @@ on_failure:
     - errorshots push s3
 ```
 
+## Allow public access to S3 files
+To automatically create public access to all files you'll upload to your S3 bucket, add the following policy to your bucket (don't forget to replace YOUR_BUCKET with your bucket name).
+```
+{
+    "Version": "2018-01-13",
+    "Statement": [
+        {
+            "Sid": "AddPerm",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::YOUR_BUCKET/*"
+        }
+    ]
+}
+```
+
 # Contributing
 
 1. Fork the repository
