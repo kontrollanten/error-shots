@@ -3,14 +3,14 @@
     "browser": false,
     "es6": true,
     "node": true,
-    "jasmine": true
+    "mocha": true
   },
   "parserOptions": {
     "sourceType": "module"
   },
   "extends": [
     "eslint:recommended",
-    "plugin:jasmine/recommended"
+    "plugin:mocha/recommended"
   ],
   "rules": {
     "indent": [
@@ -36,6 +36,6 @@
     "no-console": 0
   },
   "plugins": [
-    "jasmine"
+    "mocha"
   ]
 }
