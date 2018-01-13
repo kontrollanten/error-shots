@@ -2,6 +2,11 @@
 # Error Shots - Send your error logs to the cloud
 
 # Usage
+## Installation
+```
+npm install errorshots --dev
+```
+
 ## Configuration
 
 ### Amazon S3 credentials
