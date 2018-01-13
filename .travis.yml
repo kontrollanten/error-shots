@@ -16,7 +16,7 @@ jobs:
       script: npm run lint
       install: skip
     - stage: unit
-      script: npm run test
+      script: npm run test:ci
     - stage: deploy
       script: skip
       deploy:
