@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/kontrollanten/error-shots/badge.svg?branch=master)](https://coveralls.io/github/kontrollanten/error-shots?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/kontrollanten/errorshots/badge.svg?branch=master)](https://coveralls.io/github/kontrollanten/errorshots?branch=master)
 # Error Shots - Send your error logs to the cloud
 
 # Usage

@@ -1,5 +1,5 @@
 {
-  "name": "error-shots",
+  "name": "errorshots",
   "version": "0.2.0",
   "description": "Error Shots gathers your error logs and sends to the cloud",
   "main": "index.js",
