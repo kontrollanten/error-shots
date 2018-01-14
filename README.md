@@ -19,11 +19,17 @@ ERROR_SHOTS_S3_SECRET_ACCESS_KEY
 ERROR_SHOTS_S3_BUCKET
 ```
 ### Error shots
-If you've provided a .errorshots file in your project root, the errorshots will be fetched from there. By default Error Shots will look for error files in `$(npm config get cache)/_logs`.
+
+#### Default behavior
+By default Error Shots will look for error files in `$(npm config get cache)/_logs`.
+
+#### .errorshots file
+If you've provided a .errorshots file in your project root, the errorshots will be fetched from there instead of the default behavior. All paths containing wildcard (\*) will be uploaded as individual files, and paths pointing to directories will be uploaded as directories.
 
 ```.errorshots
-errorshot*.png
-logs/*
+errorshot.png  # This will be uploaded as individual files
+logs/*          # This will be uploaded as individual files
+error_logs      # This will be uploaded as a directory
 ```
 
 ## API
