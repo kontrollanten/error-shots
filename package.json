@@ -39,18 +39,17 @@
     "@commitlint/config-conventional": "^6.0.2",
     "chai": "^4.1.2",
     "commitizen": "^2.9.6",
-    "coveralls": "^2.13.1",
-    "eslint": "^4.6.1",
+    "coveralls": "^3.0.0",
+    "eslint": "^4.15.0",
     "eslint-plugin-mocha": "^4.11.0",
     "husky": "^0.14.3",
-    "mocha": "^3.5.0",
-    "nyc": "^11.2.1",
+    "mocha": "^4.1.0",
+    "nyc": "^11.4.1",
     "proxyquire": "^1.8.0",
     "sinon": "^4.1.5",
     "sinon-chai": "^2.14.0"
   },
   "dependencies": {
-    "log-update": "^2.1.0",
     "s3": "^4.4.0"
   },
   "nyc": {
