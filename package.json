@@ -1,6 +1,6 @@
 {
   "name": "errorshots",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Error Shots gathers your error logs and sends to the cloud",
   "main": "index.js",
   "scripts": {
