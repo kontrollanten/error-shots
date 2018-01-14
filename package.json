@@ -38,7 +38,6 @@
     "@commitlint/cli": "^6.0.2",
     "@commitlint/config-conventional": "^6.0.2",
     "chai": "^4.1.2",
-    "chai-spies-next": "^0.9.3",
     "commitizen": "^2.9.6",
     "coveralls": "^2.13.1",
     "eslint": "^4.6.1",
