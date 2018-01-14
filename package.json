@@ -4,6 +4,8 @@
   "description": "Error Shots gathers your error logs and sends to the cloud",
   "main": "index.js",
   "scripts": {
+    "cm": "git-cz",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
     "lint": "eslint .",
     "precommit": "npm run lint",
     "prepush": "npm test",
@@ -17,6 +19,11 @@
   "bin": {
     "errorshots": "./index.js"
   },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
   "keywords": [
     "error",
     "errorshots",
@@ -28,8 +35,11 @@
   "author": "kontrollanten <alexander@width.se>",
   "license": "ISC",
   "devDependencies": {
+    "@commitlint/cli": "^6.0.2",
+    "@commitlint/config-conventional": "^6.0.2",
     "chai": "^4.1.2",
     "chai-spies-next": "^0.9.3",
+    "commitizen": "^2.9.6",
     "coveralls": "^2.13.1",
     "eslint": "^4.6.1",
     "eslint-plugin-mocha": "^4.11.0",
