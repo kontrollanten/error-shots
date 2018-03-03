@@ -52,6 +52,8 @@ on_failure:
     - errorshots push s3
 ```
 
+**Important**: To avoid Travis output the uploaded file path as `[secure]` be sure that you set your Travis `ERROR_SHOTS_S3_BUCKET` env variables as public.
+
 ## Allow public access to S3 files
 To automatically create public access to all files you'll upload to your S3 bucket, add the following policy to your bucket (don't forget to replace YOUR_BUCKET with your bucket name).
 ```
